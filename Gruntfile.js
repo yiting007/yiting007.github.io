@@ -12,12 +12,8 @@ module.exports = function (grunt) {
   // Time how long tasks take. Can help when optimizing build times
   require('time-grunt')(grunt);
 
-  // Automatically load required Grunt tasks
-  require('jit-grunt')(grunt, {
-    useminPrepare: 'grunt-usemin',
-    ngtemplates: 'grunt-angular-templates',
-    cdnify: 'grunt-google-cdn'
-  });
+  // Load plugins automatically if needed.
+  require('load-grunt-tasks')(grunt);
 
   // Configurable paths for the application
   var appConfig = {
@@ -363,6 +359,7 @@ module.exports = function (grunt) {
             '*.{ico,png,txt}',
             '.htaccess',
             '*.html',
+            'views/{,*/}*.html',
             'images/{,*/}*.{webp}',
             'styles/fonts/{,*/}*.*'
           ]
@@ -426,7 +423,7 @@ module.exports = function (grunt) {
     }
   });
 
-  grunt.loadNpmTasks('grunt-build-control');
+  // grunt.loadNpmTasks('grunt-build-control');
 
   grunt.registerTask('deploy', [
     'buildcontrol:pages'
