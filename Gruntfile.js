@@ -411,7 +411,7 @@ module.exports = function (grunt) {
       pages: {
         options: {
           remote: 'git@github.com:yiting007/yiting007.github.io.git',
-          branch: 'gh-pages'
+          branch: 'master'
         }
       },
       local: {
