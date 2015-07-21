@@ -1,0 +1,35 @@
+.content-dateRangePicker {
+  margin: 20px 150px 40px 150px;
+  /* border: 1px solid navy; */
+}
+
+.dp-demo-wrapper {
+  overflow: hidden;
+}
+
+.dp-info {
+  float: right;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, .15);
+  border-radius: 3px;
+  width: 45%;
+  padding: 20px 0 20px 20px;
+}
+
+.dp-demo {
+  overflow: hidden;
+  width: 40%;
+}
+
+.dp-info-wrapper {
+  margin-top: 20px;
+  /* border: 1px solid red; */
+}
+
+.dp-info-codeblock {
+  padding-top: 20px;
+}
+
+.dp-info-codename {
+  padding: 0 10px 10px 10px;
+}

@@ -3,6 +3,16 @@ body{
   background:rgba(0, 0, 0, .04);
 }
 
+button {
+  font-family: 'Open Sans', sans-serif;
+}
+
+pre {
+  font-family: 'Open Sans', sans-serif;
+  background: #fff;
+  border-radius: 3px;
+}
+
 a {
   color: #000;
   text-decoration: none;

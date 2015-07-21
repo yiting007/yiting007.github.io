@@ -9,7 +9,10 @@
     "angular-route": "^1.3.0",
     "angular-sanitize": "^1.3.0",
     "angular-touch": "^1.3.0",
-    "angular-deckgrid": "~0.5.0"
+    "angular-deckgrid": "~0.5.0",
+    "fontawesome": "~4.3.0",
+    "angular-dUtil": "yiting007/angular-dUtil",
+    "angular-ui-codemirror": "~0.3.0"
   },
   "devDependencies": {
     "angular-mocks": "^1.3.0"

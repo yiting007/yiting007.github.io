@@ -1,0 +1,92 @@
+
+.datePicker{
+    display: block;
+}
+
+.datePickerInfo{
+    cursor: pointer;
+    width: 13em;
+    text-align: center;
+}
+
+.datePickerErrMsg{
+    color: #FF0000;
+    margin-left: 10px;
+}
+
+.datePickerInvalid{
+    border-color: #FF0000;
+}
+
+.datePickerTable{
+    border-collapse: initial;
+    border-spacing: 10px;
+}
+
+.calendar{
+    position: absolute;
+    display: block;
+    border: 1px solid #000066;
+    background-color: #FFFFFF;
+    text-align: center;
+    z-index: 1010;
+}
+
+.calendarHead{
+    background-color: #E6E6E6;
+}
+
+.calendarTable{
+    vertical-align: top;
+}
+
+.dateTable{
+}
+
+.dateHead{
+    font-weight: bold;
+}
+
+.selectMonthYearBar{
+    border-bottom: 1px solid #000066;
+}
+
+.fromToBar{
+    border-top: 1px solid #000066;
+    text-align: center;
+}
+
+.day{
+    cursor: pointer;
+    border: 1px solid #F0F5F5;
+    text-align: center;
+}
+
+.day:hover{
+    background-color: #66CCFF;
+    color: #FFFFFF;
+}
+
+.clickedDates{
+    background-color: #66CCFF;
+    color: #FFFFFF;
+}
+
+.selectedDates{
+    background-color: #FFFF66;
+    color: #66CCFF;
+}
+
+.invalidDates{
+    cursor: auto;
+    pointer-events: none;
+    border: none;
+}
+
+.todayDates{
+    font-weight: bold;
+}
+
+.fromToDisplay{
+    border-color: #0099CC;
+}

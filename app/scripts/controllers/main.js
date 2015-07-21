@@ -17,30 +17,38 @@ angular.module('yiting007githubioApp')
     self.photos = [{
       id: 'photo-1',
       name: 'Date Range Picker',
-      src: '/images/dateRangePicker.png'
+      src: '/images/dateRangePicker.png',
+      url: '#/projects/angular-date-picker',
+      description: 'An AngularJS directive'
     }, {
       id: 'photo-2',
       name: 'Game of Life',
-      src: '/images/gameOfLife.png'
+      src: '/images/gameOfLife.png',
+      description: ''
     }, {
       id: 'photo-3',
       name: 'Java 3D Engine',
-      src: '/images/3dEngine.png'
+      src: '/images/3dEngine.png',
+      description: ''
     }, {
       id: 'photo-4',
       name: 'Five Chess Game Simulator & AI',
-      src: '/images/5ChessGame.png'
+      src: '/images/5ChessGame.png',
+      description: ''
     }, {
       id: 'photo-5',
       name: 'Sudoku Solver',
-      src: '/images/sudokuSolver.png'
+      src: '/images/sudokuSolver.png',
+      description: ''
     }, {
       id: 'photo-6',
       name: 'Golang & Arduino',
-      src: '/images/arduinoGo.gif'
+      src: '/images/arduinoGo.gif',
+      description: ''
     }, {
       id: 'photo-7',
       name: 'Digit Recognition',
-      src: '/images/digitRec.png'
+      src: '/images/digitRec.png',
+      description: ''
     }];
   });

@@ -16,7 +16,9 @@ angular
     'ngRoute',
     'ngSanitize',
     'ngTouch',
-    'akoenig.deckgrid'
+    'akoenig.deckgrid',
+    'dUtilApp',
+    'ui.codemirror'
   ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -29,6 +31,11 @@ angular
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl',
         controllerAs: 'about'
+      })
+      .when('/projects/angular-date-picker', {
+        templateUrl: 'views/projects/dateRangePicker.html',
+        controller: 'dUtilCtrl',
+        controllerAs: 'date-picker'
       })
       .otherwise({
         redirectTo: '/'
