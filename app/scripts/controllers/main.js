@@ -24,6 +24,7 @@ angular.module('yiting007githubioApp')
       id: 'photo-2',
       name: 'Game of Life',
       src: '/images/gameOfLife.png',
+      url: '#/projects/game-of-life',
       description: ''
     }, {
       id: 'photo-3',

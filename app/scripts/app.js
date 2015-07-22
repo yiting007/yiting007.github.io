@@ -37,6 +37,11 @@ angular
         controller: 'dUtilCtrl',
         controllerAs: 'date-picker'
       })
+      .when('/projects/game-of-life', {
+        templateUrl: 'views/projects/gameOfLife.html',
+        controller: 'lifeCtrl',
+        controllerAs: 'game-of-life'
+      })
       .otherwise({
         redirectTo: '/'
       });

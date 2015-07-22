@@ -1,3 +1,4 @@
+/* date range picker */
 .content-dateRangePicker {
   margin: 20px 150px 40px 150px;
   /* border: 1px solid navy; */
@@ -33,3 +34,39 @@
 .dp-info-codename {
   padding: 0 10px 10px 10px;
 }
+
+/* game of life */
+.content-gameOfLife {
+  margin: 20px 100px 40px 100px;
+  background: #fff;
+}
+
+.life-demo-wrapper {
+  overflow: hidden;
+  width: 75%;
+}
+
+.life-info-wrapper {
+  float: right;
+  width: 20%;
+}
+
+.life-button {
+  width: 5em;
+  height: 3em;
+  background: #fff;
+  border-radius: 3px;
+  margin: 5px 5px 5px 5px;
+  font-size: 100%;
+}
+
+.life-button:hover {
+  background: #F5F5F5;
+}
+
+.life-button:active,
+.life-button:focus{
+  outline: 0;
+}
+
+

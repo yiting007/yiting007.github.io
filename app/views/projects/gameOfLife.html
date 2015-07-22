@@ -1,0 +1,33 @@
+<div class="content-gameOfLife">
+  <div>
+    <h3>A Javascript implementation of Conway's Game of Life
+        <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life" target="_blank">
+          <i class="fa fa-question-circle fa-fw"></i>
+        </a>
+      </h3>
+    <ol>
+      <li>Any live cell with fewer than two live neighbours dies, as if caused by under-population.</li>
+      <li>Any live cell with two or three live neighbours lives on to the next generation.</li>
+      <li>Any live cell with more than three live neighbours dies, as if by overcrowding.</li>
+      <li>Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.</li>
+    </ol>
+  </div>
+
+  <div class="life-info-wrapper">
+    <ul>
+      <li>#of live cells: <span id="liveCnt"></span>
+      </li>
+      <li>#of generations: <span id="generationCnt"></span>
+      </li>
+    </ul>
+    <div>
+      <button id="btnNext" ng-click="btnNext()" class="life-button">next</button>
+      <button id="btnClear" ng-click="btnClear()" class="life-button">clear</button>
+      <button id="btnAutoRun" ng-click="btnAutoRun()" class="life-button">auto</button>
+      <button id="btnStop" ng-click="btnStop()" class="life-button">stop</button>
+    </div>
+  </div>
+  <div class="life-demo-wrapper">
+    <canvas class="c" id="b" style="border-style: solid; border-width: 1px;"></canvas>
+  </div>
+</div>
