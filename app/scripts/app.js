@@ -42,6 +42,21 @@ angular
         controller: 'lifeCtrl',
         controllerAs: 'game-of-life'
       })
+      .when('/projects/arduino', {
+        templateUrl: 'views/projects/arduino.html',
+        controller: 'arduinoCtrl',
+        controllerAs: 'arduino'
+      })
+      .when('/projects/digit', {
+        templateUrl: 'views/projects/digit.html',
+        controller: 'digitCtrl',
+        controllerAs: 'digit'
+      })
+      .when('/projects/sudoku', {
+        templateUrl: 'views/projects/sudoku.html',
+        controller: 'sudokuCtrl',
+        controllerAs: 'sudoku'
+      })
       .otherwise({
         redirectTo: '/'
       });
