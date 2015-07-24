@@ -34,6 +34,7 @@
 .dp-info-codename {
   padding: 0 10px 10px 10px;
 }
+/* end of date range picker */
 
 /* game of life */
 .content-gameOfLife {
@@ -68,5 +69,36 @@
 .life-button:focus{
   outline: 0;
 }
+/* end of game of life */
+
+/* arduino golang */
+.content-arduino{
+  margin: 20px 150px 40px 150px;
+  background: #fff;
+}
+
+.arduino-right-pic {
+  float: right;
+  width: 25%;
+  padding: 20px 0 10px 0;
+  height: 380px;
+}
+
+.arduino-left-pic {
+  padding: 68px 0 0 0;
+  overflow: hidden;
+  width: 75%;
+}
+
+pre.arduino-code {
+  background: #ffc;
+  margin-right: 70px;
+}
+
+a.arduino-link {
+  color: green;
+}
+/* end of arduino golang */
+
 
 
