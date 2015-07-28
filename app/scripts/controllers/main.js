@@ -7,12 +7,20 @@
  * # MainCtrl
  * Controller of the yiting007githubioApp
  */
-angular.module('yiting007githubioApp')
-  .controller('MainCtrl', function ($scope) {
+angular.module('yiting007githubioApp').controller('MainCtrl', [
+  '$scope',
+  'pageCounter',
+  function ($scope, pageCounter) {
     var self = this;
     // Put a reference to the controller into $scope so that all the data and methods needed in the
     // scope can go into the controller.
     $scope.mainCtrl = self;
+
+    pageCounter.getPageCount(0).success(function (data) {
+      console.log(data);
+      self.pageCount = data.records;
+    }).error(function () {
+    });
 
     self.photos = [{
       id: 'photo-1',
@@ -57,4 +65,5 @@ angular.module('yiting007githubioApp')
       url: '#/projects/digit',
       description: ''
     }];
-  });
+  }
+]);

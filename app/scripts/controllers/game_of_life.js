@@ -7,8 +7,17 @@
  * # MainCtrl
  * Controller of the yiting007githubioApp
  */
-angular.module('yiting007githubioApp')
-  .controller('lifeCtrl', function ($scope) {
+angular.module('yiting007githubioApp').controller('lifeCtrl', [
+  '$scope',
+  'pageCounter',
+  function ($scope, pageCounter) {
+
+    pageCounter.getPageCount(2).success(function (data) {
+      console.log(data);
+      $scope.pageCount = data.records;
+    }).error(function () {});
+
+
     //------------------------ define the World class ----------------------
     function World(config) {
       this.canvas = document.getElementById('b');
@@ -243,4 +252,5 @@ angular.module('yiting007githubioApp')
       document.getElementById('generationCnt').innerHTML = world.generationCounter;
       document.getElementById('liveCnt').innerHTML = world.liveCellsCounter;
     }
-  });
+  }
+]);

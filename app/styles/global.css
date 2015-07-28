@@ -27,13 +27,26 @@ img {
   max-width: 100%;
 }
 
+.page-count {
+  border-radius: 3px;
+  padding: 10px 10px 10px 10px;
+  color: #fff;
+  background: #000;
+  position: fixed;
+  transition: background .5s ease-in-out;
+}
+
+.page-count:hover {
+  background: #09f;
+}
+
 .blog-title-wapper {
   border-radius: 3px;
   padding: 10px 10px 10px 10px;
   color: #fff;
   position: fixed;
   background: #000;
-  transition: background 2s ease-in-out;
+  transition: background .5s ease-in-out;
 }
 
 .blog-title-wapper:hover {
