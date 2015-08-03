@@ -8,7 +8,7 @@ angular.module('yiting007githubioApp').service('pageCounter', [
       return $http({
         method: 'POST',
         url: counterRequestURL,
-        dataType: 'jsonp',
+        headers: {'Content-Type': 'application/json'},
         data: {
           'pageId': pageId
         }
