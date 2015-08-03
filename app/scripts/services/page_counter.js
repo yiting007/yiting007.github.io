@@ -6,10 +6,10 @@ angular.module('yiting007githubioApp').service('pageCounter', [
     var counterRequestURL = 'https://io-backend.herokuapp.com/count';
     this.getPageCount = function (pageId) {
       return $http({
-        method: 'GET',
+        method: 'POST',
         url: counterRequestURL,
         dataType: 'jsonp',
-        params: {
+        data: {
           'pageId': pageId
         }
       });
