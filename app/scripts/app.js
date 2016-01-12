@@ -57,6 +57,11 @@ angular
         controller: 'sudokuCtrl',
         controllerAs: 'sudoku'
       })
+      .when('/happybirthday', {
+        templateUrl: 'views/fun/philBirthday.html',
+        controller: 'philBirthdayCtrl',
+        controllerAs: 'philBirthday'
+      })
       .otherwise({
         redirectTo: '/'
       });
