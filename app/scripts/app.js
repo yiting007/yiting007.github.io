@@ -62,6 +62,10 @@ angular
         controller: 'philBirthdayCtrl',
         controllerAs: 'philBirthday'
       })
+      .when('/ideas', {
+          templateUrl: 'views/fun/ideas.html',
+          controllerAs: 'ideasCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
