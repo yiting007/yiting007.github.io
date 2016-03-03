@@ -17,7 +17,7 @@ angular.module('yiting007githubioApp').controller('MainCtrl', [
     $scope.mainCtrl = self;
 
     pageCounter.getPageCount(0).success(function (data) {
-      console.log(data);
+      // console.log(data);
       self.pageCount = data.records;
     }).error(function () {
     });

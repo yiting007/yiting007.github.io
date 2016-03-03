@@ -1,0 +1,26 @@
+.idea-item {
+    border: 1px solid black;
+    margin-top: 20px;
+    padding: 5px;
+    text-align: left;
+    background: white;
+}
+
+.add-item {
+    margin-top: 50px;
+}
+
+.idea-label {
+}
+
+.idea-textarea {
+    width: 80%;
+    height: 100px;
+    padding: 10px;
+    fron-size: medium;
+    margin-top: 5px;
+}
+
+.idea-submit {
+    width: 82%;
+}

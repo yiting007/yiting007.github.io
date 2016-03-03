@@ -64,7 +64,8 @@ angular
       })
       .when('/ideas', {
           templateUrl: 'views/fun/ideas.html',
-          controllerAs: 'ideasCtrl'
+          controller: 'ideasCtrl',
+          controllerAs: 'ideas'
       })
       .otherwise({
         redirectTo: '/'
