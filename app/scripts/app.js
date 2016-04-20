@@ -67,6 +67,11 @@ angular
           controller: 'ideasCtrl',
           controllerAs: 'ideas'
       })
+      .when('/todo', {
+          templateUrl: 'views/fun/todo.html',
+          controller: 'todoCtrl',
+          controllerAs: 'todo'
+      })
       .when('/notes/io-setup', {
           templateUrl: 'views/notes/io-setup.html'
       })
