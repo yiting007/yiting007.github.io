@@ -27,6 +27,10 @@ img {
   max-width: 100%;
 }
 
+li {
+    margin: 3px auto;
+}
+
 .page-count {
   border-radius: 3px;
   padding: 10px 10px 10px 10px;
@@ -81,3 +85,19 @@ img {
   width: 50%;
 }
 
+.code {
+    background: #FFFFFF;
+}
+
+.code-a {
+    color: blue;
+}
+
+.CodeMirror {
+  border: 1px solid #eee;
+  height: auto;
+}
+
+.io-setup {
+    margin: auto 150px;
+}

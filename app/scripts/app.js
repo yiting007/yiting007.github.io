@@ -67,6 +67,9 @@ angular
           controller: 'ideasCtrl',
           controllerAs: 'ideas'
       })
+      .when('/notes/io-setup', {
+          templateUrl: 'views/notes/io-setup.html'
+      })
       .otherwise({
         redirectTo: '/'
       });
