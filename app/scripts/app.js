@@ -32,7 +32,12 @@ angular
         controller: 'AboutCtrl',
         controllerAs: 'about'
       })
-      .when('/projects/angular-date-picker', {
+      .when('/projects/single-div-css', {
+        templateUrl: 'views/projects/singleDivCss.html',
+        controller: 'divCtrl',
+        controllerAs: 'single-div-css'
+      })
+     .when('/projects/angular-date-picker', {
         templateUrl: 'views/projects/dateRangePicker.html',
         controller: 'dUtilCtrl',
         controllerAs: 'date-picker'
