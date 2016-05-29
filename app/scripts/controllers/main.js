@@ -26,7 +26,7 @@ angular.module('yiting007githubioApp').controller('MainCtrl', [
             id: 'photo-0',
             name: 'Single Div CSS',
             src: '/images/singleDiv.png',
-            url: '#/projects/single-div-css',
+            url: 'https://github.com/yiting007/singleDiv/blob/master/README.md',
             description: ''
         }, {
             id: 'photo-1',
