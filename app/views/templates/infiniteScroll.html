@@ -1,0 +1,12 @@
+<div id="test-infinite-scroll" class="test-infinite-scroll">
+    <div ng-repeat="content in contentQueue track by $index">
+        <div class="contentBox" ng-style="{'background-color': content.tag}">{{content.num}}</div>
+    </div>
+
+    <div class="scroll-info">
+        <div>$window.pageYOffset: {{infoObj.pageYOffset}}</div>
+        <div>$window.innerHeight: {{infoObj.innerHeight}}</div>
+        <div>elm[0].offsetHeight: {{infoObj.offsetHeight}}</div>
+        <div>{{triggerList}}</div>
+    </div>
+</div>
