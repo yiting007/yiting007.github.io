@@ -57,7 +57,10 @@ angular
         controller: 'sudokuCtrl',
         controllerAs: 'sudoku'
       })
-      .when('/happybirthday', {
+      .when('/projects/infiniteScroll', {
+        templateUrl: 'views/projects/infiniteScroll.html'
+      })
+     .when('/happybirthday', {
         templateUrl: 'views/fun/philBirthday.html',
         controller: 'philBirthdayCtrl',
         controllerAs: 'philBirthday'

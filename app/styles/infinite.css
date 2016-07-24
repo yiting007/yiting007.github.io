@@ -1,0 +1,16 @@
+.contentBox {
+    border: solid 1px;
+    margin-bottom: 20px;
+    margin-right: 50%;
+    text-align: center;
+    height: 150px;
+}
+
+.scroll-info {
+    position: fixed;
+    float: right;
+    top: 30%;
+    left: 63%;
+    border: solid 1px;
+    padding: 10px;
+}
