@@ -1,16 +1,18 @@
 .contentBox {
+    background-color: rgba(0, 188, 212, 0.17);
     border: solid 1px;
-    margin-bottom: 20px;
     margin-right: 50%;
     text-align: center;
-    height: 150px;
 }
 
 .scroll-info {
+    background-color: #e1d8f7;
     position: fixed;
     float: right;
     top: 30%;
-    left: 63%;
+    left: 53%;
+    right: 10%;
     border: solid 1px;
-    padding: 10px;
+    padding: 7px;
+    white-space: pre-line;
 }

@@ -1,12 +1,23 @@
 <div id="test-infinite-scroll" class="test-infinite-scroll">
-    <div ng-repeat="content in contentQueue track by $index">
-        <div class="contentBox" ng-style="{'background-color': content.tag}">{{content.num}}</div>
+    <div ng-repeat="content in sections track by $index">
+        <div ng-repeat="record in content.records track by $index">
+            <div class="contentBox" ng-style="{'height': record.height}">{{record.num}}</div>
+        </div>
     </div>
 
     <div class="scroll-info">
-        <div>$window.pageYOffset: {{infoObj.pageYOffset}}</div>
-        <div>$window.innerHeight: {{infoObj.innerHeight}}</div>
-        <div>elm[0].offsetHeight: {{infoObj.offsetHeight}}</div>
-        <div>{{triggerList}}</div>
+        Dynamic Infinite Scrolling. Only elements in sections will are viewable, elements in stacks will be removed from the dom tree (refresh if it doesn't work on first time page load). <a href="https://github.com/yiting007/yiting007.github.io/blob/infinite-scroll/app/scripts/directives/infiniteScroll.js" target="_blank">source code here</a>
+        <table>
+            <tr>
+                <td>stack top |||||||</td>
+                <td>sections |||||||</td>
+                <td>stack bottom</td>
+            </tr>
+            <tr>
+                <td>{{infoObj.stackTop}}</td>
+                <td>{{infoObj.sections}}</td>
+                <td>{{infoObj.stackBottom}}</td>
+            </tr>
+        </table>
     </div>
 </div>
