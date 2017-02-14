@@ -118,8 +118,8 @@ app.directive('infiniteScroll', function($window, $timeout) {
                     document.body.scrollTop = document.body.scrollTop + internalUpdates.height * internalUpdates.direction;
                     debugOutput(scope.sections);
                     return scope.$apply();
-                } else { // need to load more tickets
-                    if ((currentScrollY + $window.innerHeight >= raw.offsetHeight) && !_loading) { // scroll down
+                } else { // need to load more records
+                    if ((currentScrollY + $window.innerHeight + _height >= raw.offsetHeight) && !_loading) { // scroll down
                         var moreRecords = loadNewRecords();
                         updateList(moreRecords, scope.sections, false, currentScrollY);
                         document.body.scrollTop = document.body.scrollTop - internalUpdates.defaultHeight;
