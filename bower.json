@@ -2,13 +2,13 @@
   "name": "yiting007githubio",
   "version": "0.0.0",
   "dependencies": {
-    "angular": "^1.3.0",
-    "angular-animate": "^1.3.0",
-    "angular-cookies": "^1.3.0",
-    "angular-resource": "^1.3.0",
-    "angular-route": "^1.3.0",
-    "angular-sanitize": "^1.3.0",
-    "angular-touch": "^1.3.0",
+    "angular": "1.4.9",
+    "angular-animate": "1.4.9",
+    "angular-cookies": "1.4.9",
+    "angular-resource": "1.4.9",
+    "angular-route": "1.4.9",
+    "angular-sanitize": "1.4.9",
+    "angular-touch": "1.4.9",
     "angular-deckgrid": "~0.5.0",
     "fontawesome": "~4.3.0",
     "angular-dUtil": "yiting007/angular-dUtil",
@@ -20,6 +20,6 @@
   "appPath": "app",
   "moduleName": "yiting007githubioApp",
   "resolutions": {
-    "angular": "^1.3"
+    "angular": "^1.4"
   }
 }
