@@ -23,12 +23,13 @@ angular.module('yiting007githubioApp').controller('MainCtrl', [
         });
 
         self.photos = [{
-            id: 'photo-0',
-            name: 'Dynamic Infinite Scrolling',
-            src: '/images/scroll.png',
-            url: '#/projects/infiniteScroll',
-            description: ''
-        },{
+        // self.photos = [{
+        //     id: 'photo-0',
+        //     name: 'Dynamic Infinite Scrolling',
+        //     src: '/images/scroll.png',
+        //     url: '#/projects/infiniteScroll',
+            // description: ''
+        // },{
             id: 'photo-1',
             name: 'Single Div CSS',
             src: '/images/singleDiv.png',

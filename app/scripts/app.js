@@ -27,11 +27,11 @@ angular
             controller: 'MainCtrl',
             controllerAs: 'main'
         })
-    .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl',
-        controllerAs: 'about'
-    })
+    // .when('/about', {
+    //     templateUrl: 'views/about.html',
+    //     controller: 'AboutCtrl',
+    //     controllerAs: 'about'
+    // })
     .when('/projects/angular-date-picker', {
         templateUrl: 'views/projects/dateRangePicker.html',
         controller: 'dUtilCtrl',
@@ -57,9 +57,9 @@ angular
         controller: 'sudokuCtrl',
         controllerAs: 'sudoku'
     })
-    .when('/projects/infiniteScroll', {
-        templateUrl: 'views/projects/infiniteScroll.html'
-    })
+    // .when('/projects/infiniteScroll', {
+    //     templateUrl: 'views/projects/infiniteScroll.html'
+    // })
     .when('/happybirthday', {
         templateUrl: 'views/fun/philBirthday.html',
         controller: 'philBirthdayCtrl',
