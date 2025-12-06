@@ -8,51 +8,66 @@
 export interface Project {
     id: string;
     name: string;
+    description: string;
     src: string;
     url: string;
-    description: string;
-    pageType: 'static' | 'dynamic' | 'redirect';
+    pageType?: 'static' | 'dynamic' | 'redirect'; // Optional tag for internal logic
+    era: 'modern' | 'classic'; // New field for categorization
 }
 
 export const projects: Project[] = [
     {
+        id: '2048',
+        name: '2048',
+        description: 'A clone of the popular 2048 game built with React and Tailwind CSS.',
+        src: '/images/2048-cover.png',
+        url: '/projects/2048',
+        pageType: 'dynamic',
+        era: 'modern'
+    },
+    {
         id: 'single-div-css',
         name: 'Single Div CSS',
         description: 'A collection of CSS art created with a single div.',
-        url: '/projects/single-div-css',
         src: '/images/singleDiv.eafadc85.png',
-        pageType: 'dynamic'
+        url: '/projects/single-div-css',
+        pageType: 'dynamic',
+        era: 'classic'
     },
     {
-        id: "game-of-life",
-        name: "Game of Life",
-        src: "/images/gameOfLife.d15d16e6.png",
-        url: "/projects/game-of-life", // Updated to local route
-        description: "",
-        pageType: "dynamic",
+        id: 'game-of-life',
+        name: 'Game of Life',
+        description: 'A React implementation of Conway\'s Game of Life.',
+        src: '/images/gameOfLife.d15d16e6.png',
+        url: '/projects/game-of-life',
+        pageType: 'dynamic',
+        era: 'classic'
     },
     {
-        id: "java-3d-engine",
-        name: "Java 3D Engine",
-        src: "/images/3dEngine.b69870fc.png",
-        url: "/projects/java-3d-engine",
-        description: "Running in browser via CheerpJ",
-        pageType: "dynamic",
+        id: 'java-3d-engine',
+        name: 'Java 3D Engine',
+        description: 'Running in browser via CheerpJ',
+        src: '/images/3dEngine.b69870fc.png',
+        url: '/projects/java-3d-engine',
+        pageType: 'dynamic',
+        era: 'classic'
     },
     {
-        id: "five-chess-game",
-        name: "Five Chess Game Simulator & AI",
-        src: "/images/5ChessGame.23a0a800.png",
-        url: "https://github.com/yiting007/QI_Plantform",
-        description: "",
-        pageType: "redirect",
+        id: 'five-chess',
+        name: 'Five Chess Game Simulator & AI',
+        description: '',
+        src: '/images/5ChessGame.23a0a800.png',
+        url: 'https://github.com/yiting007/Five-Chess-Game-Simulator-AI',
+        pageType: 'redirect',
+        era: 'classic'
     },
     {
-        id: "golang-arduino",
-        name: "Golang & Arduino",
-        src: "/images/arduinoGo.2b2489f6.gif",
-        url: "/projects/arduino", // Updated to local route
-        description: "",
-        pageType: "static",
-    },
+        id: 'arduino',
+        name: 'Golang & Arduino',
+        description: '',
+        src: '/images/arduinoRun.cdd4c83f.png',
+        url: '/projects/arduino',
+        pageType: 'dynamic',
+        era: 'classic'
+    }
 ];
