@@ -1,3 +1,10 @@
+/**
+ * FILE: src/lib/markdown.ts
+ * PURPOSE: Utility functions for reading and parsing Markdown files from the file system. Uses `matter` to extract frontmatter metadata.
+ * OPTIMIZATION:
+ *  - Implement caching (memoization) for file reads to improve performance during development.
+ *  - Add error handling for missing files or malformed frontmatter.
+ */
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';

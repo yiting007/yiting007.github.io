@@ -1,3 +1,10 @@
+/**
+ * FILE: src/data/projects.ts
+ * PURPOSE: Centralized data source for all projects displayed on the portfolio. Defines the schema and content for project cards.
+ * OPTIMIZATION:
+ *  - Currently hardcoded. Moving this to a headless CMS (like Contentful or Sanity) would allow for easier content updates without code changes.
+ *  - Types could be strictly validated using Zod at runtime if data comes from an external API.
+ */
 export interface Project {
     id: string;
     name: string;

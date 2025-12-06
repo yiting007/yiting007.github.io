@@ -1,3 +1,10 @@
+/**
+ * FILE: src/components/GameOfLife.tsx
+ * PURPOSE: Implements the core logic and UI for Conway's Game of Life. Handles the grid state, simulation loop, and user interactions.
+ * OPTIMIZATION:
+ *  - Currently renders using a grid of divs. For larger grids, migrating to an HTML5 Canvas implementation would significantly improve performance.
+ *  - Simulation loop uses `setTimeout`. `requestAnimationFrame` could provide smoother animations.
+ */
 'use client';
 
 import React, { useEffect, useRef, useState, useCallback } from 'react';

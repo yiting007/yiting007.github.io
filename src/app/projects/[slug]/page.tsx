@@ -4,6 +4,14 @@ import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import remarkUnwrapImages from 'remark-unwrap-images';
 import rehypeRaw from 'rehype-raw';
+/**
+ * FILE: src/app/projects/[slug]/page.tsx
+ * PURPOSE: Dynamic route handler for Markdown-based project pages. Renders content using react-markdown with GFM and raw HTML support.
+ * OPTIMIZATION:
+ *  - `generateStaticParams` ensures these pages are statically generated at build time (SSG) for performance.
+ *  - Images are optimized using `next/image` via a custom renderer.
+ */
+import fs from 'fs';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import Image from 'next/image';

@@ -1,3 +1,10 @@
+/**
+ * FILE: src/app/page.tsx
+ * PURPOSE: The main landing page of the portfolio. Displays the hero section and the grid of project cards.
+ * OPTIMIZATION:
+ *  - Implement lazy loading for ProjectCard components if the list grows large.
+ *  - Use `generateStaticParams` if this page were dynamic, but it's static by default.
+ */
 import Navbar from '@/components/Navbar';
 import ProjectCard from '@/components/ProjectCard';
 import { projects } from '@/data/projects';

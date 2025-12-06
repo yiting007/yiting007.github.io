@@ -1,3 +1,10 @@
+/**
+ * FILE: src/app/projects/java-3d-engine/page.tsx
+ * PURPOSE: Dedicated page for the Java 3D Engine. Integrates CheerpJ to run a legacy Java JAR in the browser via WebAssembly.
+ * OPTIMIZATION:
+ *  - CheerpJ script is loaded with `strategy="afterInteractive"` to prioritize initial page render.
+ *  - `MutationObserver` is used to efficiently detect when the canvas is ready, avoiding polling loops where possible.
+ */
 'use client';
 
 import { useEffect, useRef, useState } from 'react';

@@ -1,5 +1,13 @@
+/**
+ * FILE: src/components/Navbar.tsx
+ * PURPOSE: Global navigation bar component. Provides links to the home page and external social profiles.
+ * OPTIMIZATION:
+ *  - Uses `next/link` for client-side transitions to internal pages.
+ *  - External links use `rel="noopener noreferrer"` for security.
+ */
 import Link from 'next/link';
-import { FaHome, FaGithubSquare, FaLinkedin, FaInstagram, FaSmile } from 'react-icons/fa';
+import { FaHome, FaGithubSquare, FaLinkedin, FaSmile } from 'react-icons/fa';
+import { SiRedbubble } from 'react-icons/si';
 
 const Navbar = () => {
     return (
@@ -7,7 +15,7 @@ const Navbar = () => {
             <div className="text-center">
                 <Link href="/" className="flex items-center justify-center space-x-2 text-gray-800 hover:text-blue-600 transition-colors">
                     <FaSmile className="text-2xl" />
-                    <span className="text-2xl font-bold">Yiting's Blog</span>
+                    <span className="text-2xl font-bold">Yiting's Dev Lab</span>
                 </Link>
             </div>
             <div className="flex space-x-6">
@@ -20,8 +28,8 @@ const Navbar = () => {
                 <a href="https://www.linkedin.com/in/yiting-l-91031959/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-blue-700 transition-colors">
                     <FaLinkedin className="text-3xl" />
                 </a>
-                <a href="https://www.instagram.com/netbeans007/?hl=en" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-pink-600 transition-colors">
-                    <FaInstagram className="text-3xl" />
+                <a href="https://www.redbubble.com/people/yiting007/shop?asc=u" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-red-600 transition-colors">
+                    <SiRedbubble className="text-3xl" />
                 </a>
             </div>
         </nav>

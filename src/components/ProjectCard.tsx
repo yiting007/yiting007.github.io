@@ -1,3 +1,10 @@
+/**
+ * FILE: src/components/ProjectCard.tsx
+ * PURPOSE: Reusable component for displaying project summaries. Handles internal vs. external link logic and image rendering.
+ * OPTIMIZATION:
+ *  - Uses `next/image` for automatic image optimization (resizing, lazy loading, format conversion).
+ *  - `fill` prop allows the image to be responsive within its container.
+ */
 import Image from 'next/image';
 import Link from 'next/link';
 import { Project } from '@/data/projects';

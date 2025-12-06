@@ -1,3 +1,10 @@
+/**
+ * FILE: src/app/projects/game-of-life/page.tsx
+ * PURPOSE: Dedicated page for the Game of Life project. Wraps the GameOfLife component with layout and description.
+ * OPTIMIZATION:
+ *  - The heavy game logic is isolated in the `GameOfLife` component, preventing re-renders of the static layout.
+ *  - Consider lazy loading the `GameOfLife` component if the page load time increases.
+ */
 import GameOfLifeComponent from '@/components/GameOfLife';
 import Navbar from '@/components/Navbar';
 import { FaCodeFork } from 'react-icons/fa6';

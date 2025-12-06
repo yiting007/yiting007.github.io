@@ -1,3 +1,10 @@
+/*
+ * FILE: src/app/globals.css
+ * PURPOSE: Global stylesheets for the application. Imports Tailwind CSS directives and defines global utility classes.
+ * OPTIMIZATION: 
+ *  - Ensure unused styles are purged in production (handled by Tailwind).
+ *  - Use CSS variables for theme colors to enable easy dark mode switching.
+ */
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
