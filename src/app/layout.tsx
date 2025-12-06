@@ -1,12 +1,14 @@
 /**
  * FILE: src/app/layout.tsx
- * PURPOSE: Root layout component that wraps all pages. Handles global font loading (Geist), metadata, and global styles.
+ * PURPOSE: Root layout component that wraps all pages. Handles global font loading (Geist), metadata, global styles, and Google Analytics.
  * OPTIMIZATION:
  *  - Font loading is optimized using next/font (zero layout shift).
  *  - Consider adding a PWA manifest here for offline capabilities.
+ *  - GA script loads with afterInteractive strategy for performance.
  */
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -29,11 +31,29 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const gaId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
+
   return (
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        {gaId && (
+          <>
+            <Script
+              src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}
+              strategy="afterInteractive"
+            />
+            <Script id="google-analytics" strategy="afterInteractive">
+              {`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', '${gaId}');
+              `}
+            </Script>
+          </>
+        )}
         {children}
       </body>
     </html>
