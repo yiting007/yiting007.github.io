@@ -17,6 +17,15 @@ export interface Project {
 
 export const projects: Project[] = [
     {
+        id: 'mario',
+        name: 'Endless Mario',
+        description: 'A procedurally-generated endless platformer with custom physics engine.',
+        src: '/images/mario-cover.png',
+        url: '/projects/mario',
+        pageType: 'dynamic',
+        era: 'modern'
+    },
+    {
         id: '2048',
         name: '2048',
         description: 'A clone of the popular 2048 game built with React and Tailwind CSS.',
